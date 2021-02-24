@@ -3,7 +3,7 @@
     
 
 
-<div class="container " style="margin-top:15%;border-radius:26px; -moz-border-radius:26px;-webkit-border-radius:26px; border:15px solid #2eb9ce;">
+<div class="container my-5" style="border-radius:26px; -moz-border-radius:26px;-webkit-border-radius:26px; border:15px solid #2eb9ce;">
     <h1 style="text-align: center">ENTER PRODUCTS</h1>
 
 
