@@ -112,11 +112,9 @@ class ProductController extends Controller
     public function destroy($id)
     {
          
-        // return 123;
         Product::destroy($id);
-        // $item = Inventory::find($id);
-        // $item->delete();
-
-        return redirect()->route('sales.index');
+      
+     
+        return redirect()->route('products.index');
     }
 }

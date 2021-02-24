@@ -4,60 +4,61 @@
       @section('content')
           
 
-
-          <table class="table table-dark table-striped my-5 table-hover table-responsive">
+<div class="table-responsive-sm">
+          <table class="table table-dark my-5 table-hover table align-middle">
             <thead class="bg-gray-50">
               <tr>
-                <th scope="col" class="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" >
                   Name
                 </th>
-                <th scope="col" class="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col">
                   Description
                 </th>
-                <th scope="col" class="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" >
                   Price
                 </th>
 
-                <th scope="col" class="px-6 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" >
                   STOCKS
                 </th>
 
-                <th scope="col" class="px-20 py-3 text-left text-lg font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col">
                   Action
                 </th>
+                
               </tr>
             </thead>
             @foreach ($list as $item)
             <tbody>
-              <tr>
+              <tr class ="align-middle">
                   
-                <td>
-                      <div >
-                        {{$item->name}}
-                      </div>
-                    </div>
+              <td>
+                  <div >
+                    {{$item->name}}
                   </div>
                 </td>
+
                 <td>
                   <div > {{$item->description}}</div>
                 </td>
+
                 <td>
                   <span>
                     {{$item->price}}
                   </span>
                 </td>
+
                 <td >
                     {{$item->quantity}}
                 </td>
 
-                <td >
+                <td>
                   <form action="{{route('products.destroy',$item->id)}}" method="POST">
 
-                    <a href="{{route('products.edit',$item->id)}}" class="btn btn-primary"> EDIT </a>        
+                   <a href="{{route('products.edit',$item->id)}}" class="btn btn-primary"> <i class="fas fa-edit"></i> </a>         
                         @csrf
                         @method('DELETE')
-                        <input type="submit" class="btn btn-danger" value="DELETE">
-
+                        <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button> 
                   </form>            
               </td>                         
               @endforeach
@@ -65,5 +66,5 @@
             </tbody>
           </table>
      
-
+    </div>
     @endsection    

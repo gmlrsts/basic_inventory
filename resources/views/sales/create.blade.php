@@ -1,13 +1,5 @@
 @extends('layouts.main-app')
 
-<ul class="box">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 @section('content')
     
 
@@ -52,7 +44,7 @@
 </div>
 
 <div class="d-grid gap-2">
-    <button type="submit" class="btn btn-primary btn-lg" style="margin-left:30%; margin-right:30%;">
+    <button type="submit" class="btn btn-primary btn-lg my-3">
       ADD TO SALES LIST
     </button>
 </div>

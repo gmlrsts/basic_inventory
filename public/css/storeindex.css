@@ -1,16 +1,40 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 20px;
 }
 
-.Background
-{background: linear-gradient(to right, rgb(221, 217, 217),rgb(223, 150, 150));
-    position: absolute;
-    width: 100%;
-    height: 100%;
+body{
+    background: linear-gradient(to right, rgb(221, 217, 217),#df9696);
+
+}
+#row
+{
+    padding-left: 20%;
+}
+
+ .card
+ {
+     width: 50%;
+     
+ }
+    
+.card-img-top
+{ position: relative;
+height: 200px;
+
+
     
 }
+
+/* .Background
+{background: linear-gradient(to right, rgb(221, 217, 217),#df9696);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    
+} */
+
 
 
 .box
@@ -96,5 +120,3 @@ animation-delay:3.5s;
     opacity: 0;
 }
 }
-
-
